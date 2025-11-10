@@ -27,9 +27,9 @@ if (isset($_POST['ajouter'])) {
 
     $sql = "INSERT INTO users (nom, email) VALUES ('$nom', '$email')";
     if (mysqli_query($conn, $sql)) {
-        echo "<div class='alert alert-success mt-3'>✅ Utilisateur ajouté avec succès.</div>";
+        echo "<div class='alert alert-success mt-3'>Utilisateur ajouté avec succès.</div>";
     } else {
-        echo "<div class='alert alert-danger mt-3'>❌ Erreur : " . mysqli_error($conn) . "</div>";
+        echo "<div class='alert alert-danger mt-3'> Erreur : " . mysqli_error($conn) . "</div>";
     }
 }
 ?>
